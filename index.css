@@ -198,15 +198,20 @@
 }
 
 @media (max-width: 600px) {
+  .test {
+    width: 100%;
+    height: 25vh;
+    /* background-color: aqua; */
+  }
   .test .wrapper .inner {
     --w: 70px;
     --h: 100px;
-    top: 15%;
+    /* top: 15%; */
     left: calc(50% - (var(--w) / 2));
   }
   .test .wrapper {
     min-height: 200px;
-    height: 50vw;
+    /* height: 50vw; */
     padding: 0 10px;
   }
 }
