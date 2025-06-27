@@ -328,15 +328,10 @@
     },
   };
   function changeCountry(code) {
-    document.getElementById('country-code').textContent = countries[code].code;
     const codeSpan = document.getElementById('country-code');
-    if (codeSpan) codeSpan.remove();
-    // if (codeSpan) codeSpan.style.display = 'none';
-    document.getElementById('country-flag').innerHTML = countries[code].flag;
-    // document.getElementById('country-flag').innerHTML = flagSvgMap[code];
-    // document.getElementById("country-code").innerText = code;
-    // document.getElementById("country-flag").innerHTML = flagSvgMap[code] || "";
-
+    if (codeSpan) codeSpan.textContent = countries[code].code;
+    const flagContainer = document.getElementById('country-flag');
+    if (flagContainer) flagContainer.innerHTML = countries[code].flag;
   }
 
   // window.onload = function() {
